@@ -6,14 +6,16 @@ body
 section
 {
 	/*overflow: hidden !important;*/
-	min-height: 600px;
+	
 	height: 100%;
 	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 #Section1
 {
 
-	background-image: url(..\img\BG2.jpg) no-repeat center center fixed !important;
+	background: url("../img/BG2.jpg") no-repeat center center fixed !important;
 	 
 
 	-webkit-background-size: cover !important; 
@@ -22,5 +24,43 @@ section
   background-size: cover !important;
   
   opacity: .6;
+}
+
+.jumbotron
+{
+	margin-top: 24%;
+	z-index: 3;
+	opacity: .6 !important;
+	margin-bottom: 0px !important;
+	max-width: 50%;
+	margin-left: 27%;
+	padding: 10px !important;
+	
+}
+
+
+#Intro
+{
+	z-index: 3 !important;
+	opacity: 1 !important;
+	text-align: center;
+	color: green;
+	font-weight: bolder;
+	font-size: 59px;
+}
+.Glyp_Center
+{
+	margin-left: 40%;
+	margin-top: 10%;
+}
+
+
+@media only screen and (min-height:0px)
+{
+	section
+	{
+		min-height: 760px;
+		overflow: hidden;
+	}
 }
 
